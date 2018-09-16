@@ -1,8 +1,10 @@
 <h1> Quotes </h1>
-<ul>
-    <div *ngFor='let quote of quotes; let i = index'>
-        <li>{{quote.name}}</li>
 
-        <app-quote-details [quote]='quote' (isComplete)='completeQuote($event, i)' id="{{i}}" appHighlight></app-quote-details>
+<div class="container">
+    <div class="row" *ngFor='let quote of quotes; let i = index'>
+        <h4>Quote by: {{quote.name}}</h4>
+
+        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event, i)' id="{{i}}" appHighlight></app-quote-details>
+
     </div>
-</ul>
+</div>
