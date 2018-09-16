@@ -1,0 +1,20 @@
+.quote-card {
+    width: 365px;
+    height: 88px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.quote-card p {
+    width: 338.5px;
+    height: 24px;
+    font-family: OpenSans;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.33;
+    text-align: left;
+    color: #212329;
+    padding-left: 9px;
+    padding-top: 20px;
+}
