@@ -3,6 +3,6 @@
     <div *ngFor='let quote of quotes; let i = index'>
         <li>{{quote.name}}</li>
 
-        <app-quote-details [quote]='quote' (isComplete)='completeQuote($event, i)'></app-quote-details>
+        <app-quote-details [quote]='quote' (isComplete)='completeQuote($event, i)' id="{{i}}" appHighlight></app-quote-details>
     </div>
 </ul>
