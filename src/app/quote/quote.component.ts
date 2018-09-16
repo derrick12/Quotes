@@ -15,6 +15,11 @@ export class QuoteComponent implements OnInit {
     new Quote(2, 'Frank Zappa', 'So many books, so little time')
   ];
 
+  completeQuote(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
 
   constructor() { }
 
