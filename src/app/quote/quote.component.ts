@@ -10,9 +10,9 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'Dont cry because its over smile because it happened'),
-    new Quote(2, 'Be yourself everyone else is already taken'),
-    new Quote(2, 'Be yourself everyone else is already taken')
+    new Quote(1, 'Dr. Seuss', 'Dont cry because its over smile because it happened'),
+    new Quote(2, 'Oscar Wilde', 'Be yourself everyone else is already taken'),
+    new Quote(2, 'Frank Zappa', 'So many books, so little time')
   ];
 
 
