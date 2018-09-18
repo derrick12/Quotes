@@ -1,11 +1,10 @@
-.quote-card {
+/*.quote-card {
     width: 365px;
     height: 88px;
     border-radius: 8px;
     background-color: #f1f1f1;
-}
 
-.quote-card p {
+    .quote-card p {
     width: 338.5px;
     height: 24px;
     font-family: OpenSans;
@@ -17,4 +16,105 @@
     color: #212329;
     padding-left: 9px;
     padding-top: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.voter {
+    width: 20px;
+    font-size: 34px;
+    text-align: center;
+    color: #999;
+}
+
+
+.buttonContainer {
+    padding: 10px;
+}
+
+*/
+
+.vote-button {
+    background-color: rgba(76, 175, 80, 0.7);
+    border: none;
+    color: white;
+    padding: 5px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.delete-button {
+    background-color: rgba(76, 175, 80, 0.7);
+    border: none;
+    color: white;
+    padding: 5px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.vote-count {
+    background-color: rgba(76, 175, 80, 0.7);
+    border: none;
+    color: white;
+    padding: 5px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.highlighted {
+    color: rgba(0, 47, 255, 0.253);
+}
+
+.card:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    padding-left: 9px;
+    padding-top: 20px;
+}
+
+#description {
+    text-align: centre;
+}
+
+#quote-by {
+    text-align: right;
 }
