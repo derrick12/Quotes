@@ -1,10 +1,21 @@
-<h1> Quotes </h1>
+<div class="jumbotron" style="background-color: rgba(245, 245, 245, 0.4);">
+    <h1>Quotes </h1>
+</div>
 
 <div class="container">
-    <div class="row" *ngFor='let quote of quotes; let i = index'>
-        <h4>Quote by: {{quote.name}}</h4>
-
-        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event, i)' id="{{i}}" appHighlight></app-quote-details>
-
+    <div class="form">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
+    <hr>
+    <div *ngFor='let quote of quotes; let i = index' id="details">
+        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event, i)' id="{{i}}" appHighlight></app-quote-details>
+        <br>
+    </div>
+    <hr>
 </div>
+
+<footer class="py-5" style="background-color: rgba(245, 245, 245, 0.4);">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 2018</p>
+    </div>
+</footer>
