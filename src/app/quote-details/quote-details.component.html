@@ -1,7 +1,45 @@
-<div class="quote-card">
-    <p><br> "{{quote.description}}" <br></p>
+<div class="card">
+    <br>
+    <div class="voter">
+        <div class="container">
+            <p id="name">Written by: {{quote.name}}</p>
+        </div>
+        <div class="container">
+            <p id="description">"{{quote.description}}"</p>
+        </div>
+        <div class="container">
+            <p id="quote-by"> <i>Quote by: {{quote.author}}</i></p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <button class="vote-button" [class.highlighted]="myVote === 1" (click)="upVote()">Upvote</button>
+            </div>
+            <div class="col-md-3">
+                <button class="vote-button" [class.highlighted]="myVote === -1" (click)="downVote()">Downvote</button>
+            </div>
+            <div class="col-md-3">
+                <span class="vote-count">{{ voteCount + myVote }}</span>
+            </div>
+            <div class="col-md-3">
+                <button class="delete-button" (click)='quoteDelete(true)'>Delete</button>
+            </div>
+        </div>
+        <br>
+    </div>
+
 </div>
 
-<p>
-    <button (click)='quoteDelete(true)'>Delete</button>
-</p>
+<!--
+        <div class="buttonContainer">
+            <button class="vote-button" [class.highlighted]="myVote === 1" (click)="upVote()">Upvote</button>
+        </div>
+        <div class="buttonContainer">
+            <button class="vote-button" [class.highlighted]="myVote === -1" (click)="downVote()">Downvote</button>
+        </div>
+        <div class="buttonContainer">
+            <span class="vote-count">{{ voteCount + myVote }}</span>
+        </div>
+        <div class="buttonContainer">
+            <button class="delete-button" (click)='quoteDelete(true)'>Delete</button>
+        </div>
+-->
